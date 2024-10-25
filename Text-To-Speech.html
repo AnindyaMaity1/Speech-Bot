@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta-Space - Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Text To Speech <span>Converter</span></h1>
+        <textarea id="text-input" placeholder="Write anything here........."></textarea>
+        <div class="row">
+            <button id="listen-button">Listen</button>
+            <button id="stop-button">Stop</button>
+            <a id="download-button" style="display: none;">Download MP3</a>
+        </div>
+    </div>
+    
+    <!-- Include Recorder.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/recorderjs/0.1.0/recorder.js"></script>
+    
+    <!-- Your JavaScript -->
+    <script src="Text-To-Speech.js"></script>
+</body>
+</html>

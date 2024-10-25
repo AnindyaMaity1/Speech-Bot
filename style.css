@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.hero h1 span {
+    color: #ff2963;
+}
+.hero p {
+    font-size: 20px; /* Font size for the paragraph */
+    color: #fff; /* Text color */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* New Style for Download Button */
+#download-button {
+    background: #28a745; /* Green for download */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    text-decoration: none;
+    display: none; /* Initially hidden */
+}
+
+#download-button:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    textarea {
+        width: 90%; /* Full width on smaller screens */
+        height: 200px;
+    }
+
+    .row {
+        width: 100%; /* Adjust row width for mobile */
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button, #download-button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 12px;
+        justify-content: center;
+    }
+}
+
+button {
+    background: #ff2963; /* Pink background for buttons */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Font size */
+    padding: 10px 30px; /* Padding for spacing */
+    border-radius: 35px; /* Rounded corners */
+    border: 0; /* No border */
+    outline: 0; /* No outline */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flex display for centering content */
+    align-items: center; /* Center items vertically */
+}
